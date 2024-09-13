@@ -48,23 +48,24 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     KC_TAB   , KC_Q     , KC_W     , KC_E     , KC_R     , KC_T     ,                                  KC_Y     , KC_U     , KC_I     , KC_O     , KC_P      , KC_ENT  ,
     KC_BSLS   , KC_A     , KC_S     , KC_D     , KC_F     , KC_G     ,                                  KC_H     , KC_J     , KC_K     , KC_L     , KC_SCLN  , KC_QUOT ,
     MO(1)    , KC_Z     , KC_X     , KC_C     , KC_V     , KC_B     , KC_LBRC  ,              KC_RBRC, KC_N     , KC_M     , KC_COMM  , KC_DOT   , KC_SLSH   , MO(1)    ,
-    KC_LCTL  , KC_LCTL  , KC_LGUI  , KC_LALT     , KC_BTN1 ,LT(2,KC_SPC),LT(3,KC_BTN2)  ,        KC_BTN1 , LT(2,KC_SPC)   ,_______   ,_______   , _______  , KC_MINS  , KC_EQL
+    KC_LCTL  , KC_LCTL  , KC_LGUI  , KC_LALT     , KC_BTN1 ,LT(2,KC_SPC),LT(3,KC_BTN2)  ,        KC_BTN1  , LT(2,KC_SPC)   ,_______   ,_______   , _______  , KC_MINS  , KC_EQL
   ),
 
+
   [1] = LAYOUT_universal(
-    S(KC_GRV), S(KC_1)  , S(KC_2)  , S(KC_3)  , S(KC_4)  , S(KC_5)  ,                                  S(KC_6)  , S(KC_7)  ,S(KC_8), S(KC_9)  , S(KC_0)  ,KC_DEL,
+    KC_ESC   , S(KC_1)  , S(KC_2)  , S(KC_3)  , S(KC_4)  , S(KC_5)  ,                                  S(KC_6)  , S(KC_7)  ,S(KC_8), S(KC_9)  , S(KC_0)  ,KC_DEL,
     S(KC_TAB), S(KC_Q)  , S(KC_W)  , S(KC_E)  , S(KC_R)  , S(KC_T)  ,                                  S(KC_Y)  , S(KC_U)  , S(KC_I)  , S(KC_O)  , S(KC_P)  ,S(KC_ENT),
     S(KC_BSLS), S(KC_A)  , S(KC_S)  , S(KC_D)  , S(KC_F)  , S(KC_G)  ,                                  S(KC_H)  , S(KC_J)  , S(KC_K)  , S(KC_L) ,S(KC_SCLN),S(KC_QUOT),
     _______  , S(KC_Z)  , S(KC_X)  , S(KC_C)  , S(KC_V)  , S(KC_B)  ,S(KC_LBRC),           S(KC_RBRC), S(KC_N)  , S(KC_M)  ,S(KC_COMM), S(KC_DOT),S(KC_SLSH) , _______,
-    PB_1     ,S(KC_LCTL), S(KC_INS),KC_PSCR  , KC_BTN3  , TG(2)     , TG(2)     ,            KC_BTN3  , KC_BTN2        , _______  ,S(KC_RGUI), _______  , S(KC_MINS), S(KC_EQL)
+    PB_1     ,S(KC_LCTL), S(KC_INS),KC_PSCR  , KC_BTN3  , _______     , _______     ,            KC_BTN1  , KC_BTN2        , _______  ,S(KC_RGUI), _______  , S(KC_MINS), S(KC_EQL)
   ),
 
   [2] = LAYOUT_universal(
     KC_GRV , KC_F1    , KC_F2    , KC_F3    , KC_F4    , KC_F5    ,                                  KC_F6    , KC_F7    , KC_F8    , KC_F9    , KC_F10   , KC_F11   ,
-    SSNP_VRT , _______  , KC_UP     , KC_8     , KC_9     , _______  ,                                  _______  , A(KC_UP)  , KC_UP    , KC_RGHT  , _______  , KC_F12   ,
+    SSNP_VRT , _______  , KC_UP     , RALT(KC_5)    , KC_9     , _______  ,                                  _______  , A(KC_UP)  , KC_UP    , KC_RGHT  , _______  , KC_F12   ,
     SSNP_HOR , KC_LEFT  , KC_DOWN  , KC_RGHT     , KC_6     ,KC_VOLD   ,                                  KC_PGUP  , A(KC_DOWN)  , A(KC_UP)  , KC_BTN2  , KC_BTN3  , _______  ,
-    SSNP_FRE , _______  , KC_1     , KC_2     , KC_3     ,S(KC_MINS), S(KC_8)  ,            S(KC_9)  , KC_PGDN  , KC_MUTE  , _______  , _______  , _______  , _______  ,
-    TG(2)    , _______  , _______  , _______   , A(KC_LEFT) , _______  , A(KC_RGHT)  ,             PB_1  , _______  , _______  , _______  , _______  , KC_VOLD  , KC_VOLU
+    KC_LSFT   , _______  , KC_1     , KC_2     , KC_3     ,S(KC_MINS), S(KC_8)  ,            S(KC_9)  , KC_PGDN  , KC_MUTE  , _______  , _______  , RALT(KC_S) , KC_RSFT     ,
+    TG(2)    , KC_LCTL  , KC_LGUI  , KC_LALT    , A(KC_LEFT) , _______  , A(KC_RGHT)  ,             PB_1  , _______  , _______  , _______  , _______  , KC_VOLD  , KC_VOLU
   ),
 
   [3] = LAYOUT_universal(
