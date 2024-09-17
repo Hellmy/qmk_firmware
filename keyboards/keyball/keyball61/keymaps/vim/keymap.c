@@ -36,6 +36,23 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
                 toggle_vim_mode();
             }
             return false;
+		case PB_2:
+			if (record->event.pressed) {
+	            if (get_vim_mode() == INSERT_MODE) {
+			    	tap_code16(KC_SPC);
+			    } else {
+			    	tap_code16(KC_BTN1);
+			    }
+			}
+		    return false;
+		case KC_BTN1:
+			if (record->event.pressed) {
+	            if (get_vim_mode() == INSERT_MODE) {
+			    	tap_code16(KC_SPC);
+					return false;
+			    } 
+			}
+		    return true;
         default:
             return true;
     }
@@ -48,7 +65,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     KC_TAB   , KC_Q     , KC_W     , KC_E     , KC_R     , KC_T     ,                                  KC_Y     , KC_U     , KC_I     , KC_O     , KC_P      , KC_ENT  ,
     KC_BSLS   , KC_A     , KC_S     , KC_D     , KC_F     , KC_G     ,                                  KC_H     , KC_J     , KC_K     , KC_L     , KC_SCLN  , KC_QUOT ,
     MO(1)    , KC_Z     , KC_X     , KC_C     , KC_V     , KC_B     , KC_LBRC  ,              KC_RBRC, KC_N     , KC_M     , KC_COMM  , KC_DOT   , KC_SLSH   , MO(1)    ,
-    KC_LCTL  , KC_LCTL  , KC_LGUI  , KC_LALT     , KC_BTN1 ,LT(2,KC_SPC),LT(3,KC_BTN2)  ,        KC_BTN1  , LT(2,KC_SPC)   ,_______   ,_______   , _______  , KC_MINS  , KC_EQL
+    KC_LCTL  , KC_LCTL  , KC_LGUI  , KC_LALT   , KC_BTN1 ,LT(2,KC_SPC),LT(3,KC_BTN2)  ,           PB_2    , LT(2,KC_SPC)   ,_______   ,_______   , _______  , KC_MINS  , KC_EQL
   ),
 
 
@@ -57,7 +74,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     S(KC_TAB), S(KC_Q)  , S(KC_W)  , S(KC_E)  , S(KC_R)  , S(KC_T)  ,                                  S(KC_Y)  , S(KC_U)  , S(KC_I)  , S(KC_O)  , S(KC_P)  ,S(KC_ENT),
     S(KC_BSLS), S(KC_A)  , S(KC_S)  , S(KC_D)  , S(KC_F)  , S(KC_G)  ,                                  S(KC_H)  , S(KC_J)  , S(KC_K)  , S(KC_L) ,S(KC_SCLN),S(KC_QUOT),
     _______  , S(KC_Z)  , S(KC_X)  , S(KC_C)  , S(KC_V)  , S(KC_B)  ,S(KC_LBRC),           S(KC_RBRC), S(KC_N)  , S(KC_M)  ,S(KC_COMM), S(KC_DOT),S(KC_SLSH) , _______,
-    PB_1     ,S(KC_LCTL), S(KC_INS),KC_PSCR  , KC_BTN3  , _______     , _______     ,            KC_BTN1  , KC_BTN2        , _______  ,S(KC_RGUI), _______  , S(KC_MINS), S(KC_EQL)
+    PB_1     ,S(KC_LCTL), S(KC_INS),KC_PSCR  , LT(3,KC_BTN1)  , _______  , LT(3,KC_BTN3),        LT(3,KC_BTN1)  , LT(3,KC_BTN2)    , _______  ,S(KC_RGUI), _______  , S(KC_MINS), S(KC_EQL)
   ),
 
   [2] = LAYOUT_universal(

@@ -27,4 +27,4 @@
 	branch = release/v8.2
 [submodule "keyboards/keyball/keyball61/keymaps/vim/qmk-vim"]
 	path = keyboards/keyball/keyball61/keymaps/vim/qmk-vim
-	url = https://github.com/andrewjrae/qmk-vim.git
+	url = https://github.com/hellmy/qmk-vim.git
