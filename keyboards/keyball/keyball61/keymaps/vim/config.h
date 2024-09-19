@@ -31,7 +31,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #    define RGBLIGHT_EFFECT_RGB_TEST
 #    define RGBLIGHT_EFFECT_ALTERNATING
 #    define RGBLIGHT_EFFECT_TWINKLE
-#endif
+#endif 
 
 #define TAP_CODE_DELAY 5
 
@@ -40,4 +40,8 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define GRAVE_ESC_CTRL_OVERRIDE 
 
 #define KEYBALL_CPI_DEFAULT 400
+#define BETTER_VISUAL_MODE
+#define VIM_G_MOTIONS
+#define VIM_NUMBERED_JUMPS
+
 

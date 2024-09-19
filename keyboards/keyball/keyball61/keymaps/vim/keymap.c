@@ -112,7 +112,7 @@ void oledkit_render_info_user(void) {
                 oled_write_P(PSTR("-- NORMAL --\n"), false);
                 break;
             case INSERT_MODE:
-                oled_write_P(PSTR("-- INSERT --\n"), false);
+                oled_write_P(PSTR("-- INSERT --!!SPC!!\n"), false);
                 break;
             case VISUAL_MODE:
                 oled_write_P(PSTR("-- VISUAL --\n"), false);
