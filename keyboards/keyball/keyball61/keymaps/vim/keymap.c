@@ -80,7 +80,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   [2] = LAYOUT_universal(
     KC_GRV , KC_F1    , KC_F2    , KC_F3    , KC_F4    , KC_F5    ,                                  KC_F6    , KC_F7    , KC_F8    , KC_F9    , KC_F10   , KC_F11   ,
     SSNP_VRT , _______  , KC_UP     , RALT(KC_5)    , KC_9     , _______  ,                                  _______  , A(KC_UP)  , KC_UP    , KC_RGHT  , _______  , KC_F12   ,
-    SSNP_HOR , KC_LEFT  , KC_DOWN  , KC_RGHT     , KC_6     ,KC_VOLD   ,                                  KC_PGUP  , A(KC_DOWN)  , A(KC_UP)  , KC_BTN2  , KC_BTN3  , _______  ,
+    SSNP_HOR , KC_LEFT  , KC_DOWN  , KC_RGHT     , SSNP_FRE   ,KC_VOLD   ,                                  KC_PGUP  , A(KC_DOWN)  , A(KC_UP)  , KC_BTN2  , KC_BTN3  , _______  ,
     KC_LSFT   , _______  , KC_1     , KC_2     , KC_3     ,S(KC_MINS), S(KC_8)  ,            S(KC_9)  , KC_PGDN  , KC_MUTE  , _______  , _______  , RALT(KC_S) , KC_RSFT     ,
     TG(2)    , KC_LCTL  , KC_LGUI  , KC_LALT    , A(KC_LEFT) , _______  , A(KC_RGHT)  ,             PB_1  , _______  , _______  , _______  , _______  , KC_VOLD  , KC_VOLU
   ),
