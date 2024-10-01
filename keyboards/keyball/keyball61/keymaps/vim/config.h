@@ -43,5 +43,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define BETTER_VISUAL_MODE
 #define VIM_G_MOTIONS
 #define VIM_NUMBERED_JUMPS
+#define AUTO_SHIFT_TIMEOUT 150
+#define NO_AUTO_SHIFT_SPECIAL
 
 
