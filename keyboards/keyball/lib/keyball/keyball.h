@@ -41,6 +41,10 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #    define KEYBALL_SCROLLSNAP_ENABLE 2
 #endif
 
+#ifndef KEYBALL_SCROLLSNAP_MODE
+#    define KEYBALL_SCROLLSNAP_MODE 2
+#endif
+
 #ifndef KEYBALL_SCROLLSNAP_RESET_TIMER
 #    define KEYBALL_SCROLLSNAP_RESET_TIMER 100
 #endif

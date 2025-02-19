@@ -529,7 +529,7 @@ keyball_scrollsnap_mode_t keyball_get_scrollsnap_mode(void) {
 #if KEYBALL_SCROLLSNAP_ENABLE == 2
     return keyball.scrollsnap_mode;
 #else
-    return 0;
+    return 2;
 #endif
 }
 
@@ -585,7 +585,7 @@ void keyboard_post_init_kb(void) {
         set_auto_mouse_timeout(c.amlto == 0 ? AUTO_MOUSE_TIME : (c.amlto + 1) * AML_TIMEOUT_QU);
 #endif
 #if KEYBALL_SCROLLSNAP_ENABLE == 2
-        keyball_set_scrollsnap_mode(c.ssnap);
+        keyball_set_scrollsnap_mode(2);
 #endif
     }
 
