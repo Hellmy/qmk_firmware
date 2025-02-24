@@ -79,17 +79,17 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   [2] = LAYOUT_universal(
     KC_GRV , KC_F1    , KC_F2    , KC_F3    , KC_F4    , KC_F5    ,                                  KC_F6    , KC_F7    , KC_F8    , KC_F9    , KC_F10   , KC_F11   ,
     PB_1   , _______  , KC_UP     , RALT(KC_5)    , KC_9     , _______  ,                                  _______  , A(KC_UP)  , KC_UP    , KC_MINS  , KC_EQL  , KC_F12   ,
-    PB_1   , KC_LEFT  , KC_DOWN  , KC_RGHT     , SSNP_FRE   ,KC_VOLD   ,                                  KC_PGUP  , KC_BTN3  , A(KC_UP)  , KC_BTN2  , KC_BTN3  , _______  ,
+    PB_1   , KC_LEFT  , KC_DOWN  , KC_RGHT     , SSNP_FRE   ,KC_VOLD   ,                                  KC_PGUP  , KC_BTN3  , A(KC_UP)  , KC_BTN2  , KC_BTN3 , QK_REBOOT  ,
     KC_LSFT   , AS_TOGG  , AS_DOWN  , AS_UP  , AS_RPT     ,S(KC_MINS), KC_ESC  ,             KC_ESC , KC_PGDN  , KC_MUTE  , TG(4)  , _______  , RALT(KC_S) , KC_RSFT     ,
-    TG(2)    , KC_LCTL  , KC_LGUI  , KC_LALT    , A(KC_LEFT) , _______  , A(KC_RGHT)  ,             _______  , _______  , _______  , _______  , _______  , KC_VOLD  , KC_VOLU
+    TG(2)    , KC_LCTL  , KC_LGUI  , KC_LALT    , A(KC_LEFT) , _______  , A(KC_RGHT)  ,             _______   , _______  , _______  , _______  , _______  , KC_VOLD  , KC_VOLU
   ),
 
   [3] = LAYOUT_universal(
     RGB_TOG  , AML_TO   , KC_UP    , AML_D50  , AML_I50  , AML_TO   ,                                  DM_REC1  , DM_REC2  , RGB_M_R  , RGB_M_SW , RGB_M_SN , RGB_M_K  ,
     RGB_MOD  , KC_LEFT  , KC_DOWN  , KC_RGHT  , _______  , _______  ,                                  DM_PLY1  , DM_PLY2  , RGB_M_T  , RGB_M_TW , _______  , DM_RSTP  ,
     RGB_RMOD , RGB_HUD  , RGB_SAD  , RGB_VAD  , _______  , _______  ,                                  CPI_D1K  , CPI_D100 , CPI_I100 , CPI_I1K  , KBC_SAVE , KBC_RST  ,
-    _______  , _______  , SCRL_DVD , SCRL_DVI , SCRL_MO  , SCRL_TO  , EE_CLR   ,            EE_CLR   , KC_HOME  , KC_PGDN  , KC_PGUP  , KC_END   , _______  , _______  ,
-    QK_REBOOT  , _______  , KC_LEFT  , KC_DOWN  , KC_UP    , KC_RGHT  , _______  ,            _______  , KC_BSPC  , _______  , _______  , _______  , _______  , QK_BOOT
+    _______  , _______  , SCRL_DVD , SCRL_DVI , SCRL_MO  , SCRL_TO  , _______   ,            _______   , KC_HOME  , KC_PGDN  , KC_PGUP  , KC_END   , _______  , _______  ,
+    QK_REBOOT  , _______  , KC_LEFT  , KC_DOWN  , KC_UP    , KC_RGHT  , _______  ,            _______  , KC_BSPC  , _______  , _______  , _______  , _______  , _______
   ),
 
   [4] = LAYOUT_universal(
