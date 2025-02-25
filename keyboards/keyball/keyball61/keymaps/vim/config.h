@@ -46,5 +46,8 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define NO_AUTO_SHIFT_SPECIAL
 #define BOTH_SHIFTS_TURNS_ON_CAPS_WORD
 #define DYNAMIC_MACRO_DELAY 50
+#define SPLIT_USB_TIMEOUT 5000
+#define SPLIT_MAX_CONNECTION_ERRORS 100
+#define SPLIT_USB_TIMEOUT_POLL 50
 
 
