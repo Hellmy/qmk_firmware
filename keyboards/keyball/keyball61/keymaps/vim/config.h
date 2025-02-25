@@ -46,6 +46,5 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define NO_AUTO_SHIFT_SPECIAL
 #define BOTH_SHIFTS_TURNS_ON_CAPS_WORD
 #define DYNAMIC_MACRO_DELAY 50
-#define NO_USB_STARTUP_CHECK
 
 
