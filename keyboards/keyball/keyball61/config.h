@@ -37,6 +37,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 // increases the firmware size by 200 bytes, so it is disabled by default, but
 // it has been reported to work well in such cases.
 #define SPLIT_WATCHDOG_ENABLE
+#define USB_SUSPEND_WAKEUP_DELAY 5000
 
 #define SPLIT_TRANSACTION_IDS_KB KEYBALL_GET_INFO, KEYBALL_GET_MOTION, KEYBALL_SET_CPI
 

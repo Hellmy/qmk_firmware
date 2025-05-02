@@ -43,7 +43,6 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define BETTER_VISUAL_MODE
 #define VIM_G_MOTIONS
 #define AUTO_SHIFT_TIMEOUT 150
-#define NO_AUTO_SHIFT_SPECIAL
 #define BOTH_SHIFTS_TURNS_ON_CAPS_WORD
 #define DYNAMIC_MACRO_DELAY 50
 
